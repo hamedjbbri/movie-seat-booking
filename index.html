@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie selector</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <select id="movie-price">
+            <option value="10">Movie 1 ($10)</option>
+            <option value="8">Movie 2 ($8)</option>
+            <option value="12">Movie 3 ($12)</option>
+            <option value="20">Movie 4 ($20)</option>
+        </select>
+
+
+        <div class="seat-status">
+            <div >
+                 <span class="seat"></span>
+                 <span>available</span>
+            </div>
+            <div >
+               <span class="seat selected"></span>
+               <span>selected</span>
+            </div>
+            <div >
+               <span class="seat reserved"></span>
+               <span>reserved</span>
+            </div>
+        </div>
+
+
+        <div class="screen">
+            <div class="row">
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+            </div>
+            <div class="row">
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+            </div>
+            <div class="row">
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+            </div>
+            <div class="row">
+                <span class="seat"></span>
+                <span class="seat reserved"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+            </div>
+            <div class="row">
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat reserved"></span>
+                <span class="seat reserved"></span>
+                <span class="seat reserved"></span>
+                <span class="seat"></span>
+            </div>
+            <div class="row">
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat"></span>
+                <span class="seat reserved"></span>
+                <span class="seat reserved"></span>
+                <span class="seat"></span>
+            </div>
+        </div>
+
+        <p class="text">You have selected <span id="ticket">0</span> and the total is $<span id="total">0</span></p>
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

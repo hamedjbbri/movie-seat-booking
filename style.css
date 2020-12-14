@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+   background-color: rgb(37, 36, 36);
+   color: #fff;
+}
+
+.container{
+    width: 350px;
+    background-color: rgba(43, 43, 43, 0.479);
+    text-align: center;
+}
+
+ #movie-price{
+    display: inline-block;
+    margin-bottom: 13px;
+    padding: 3px;
+    border-radius: 6px;
+    
+}
+
+.seat-status {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.row{
+    display: flex;
+     justify-content: center;
+
+}
+
+.seat { 
+    display: inline-block;
+    width:15px;
+    height: 15px;
+    background-color: rgb(122, 122, 122);
+    margin: 3px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+
+}
+
+ .seat-status div {
+     display: flex;
+ }
+
+ .seat.selected {
+     background-color: rgb(21, 245, 208);
+ }
+
+ .seat.reserved {
+    background-color: rgb(255, 255, 255);
+}
+
+.row .seat:nth-child(2) {
+   margin-right: 10px;
+}
+
+
+.row .seat:nth-last-child(2) {
+    margin-left: 10px;
+ }
+
+
+ .screen .seat:hover {
+     cursor: pointer;
+     background-color: #fff;
+     transform: scale(1.1);
+ }
+
+ #ticket, #total {
+     color:  rgb(21, 245, 208);
+ }
